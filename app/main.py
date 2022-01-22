@@ -18,7 +18,8 @@ def initialize(points, lines):
 
 def main():
   # from examples import double_pendulum as current
-  from examples import cloth as current
+  # from examples import cloth as current
+  from examples import ball as current
   k, w = initialize(current.points, current.lines)
   d.draw(k, w)
   print(k)
