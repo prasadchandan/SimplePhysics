@@ -17,8 +17,10 @@ def draw(k:g.Kernel, w:g.WorldConfig):
   with dpg.window(label="Main Window", tag="MainWindow", autosize=True):
     with dpg.drawlist(width=800, height=600, tag="canvas"):
       redraw(k, w)
+      ## IDEA: Create a dpg.node and use translate to move the points around rather 
+      ## .     than redrawing each time?
 
-  dpg.create_viewport(title='Custom Title', width=800, height=600)
+  dpg.create_viewport(title='Simple Physics Engine', width=840, height=600)
   dpg.set_primary_window('MainWindow', True)
   dpg.setup_dearpygui()
   dpg.show_viewport()
