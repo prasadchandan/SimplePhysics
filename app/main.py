@@ -2,18 +2,7 @@ import geometry as g
 import draw as d
 from rich import print
 
-points = [
-  (400, 20, True),
-  (300, 30, False),
-  (200, 30, False)
-]
-
-lines = [
-  (0, 1),
-  (1, 2)
-]
-
-def initialize():
+def initialize(points, lines):
   w = g.WorldConfig()
   k = g.Kernel(points={}, lines={})
 
@@ -28,7 +17,8 @@ def initialize():
   return k, w
 
 def main():
-  k, w = initialize()
+  from examples import double_pendulum
+  k, w = initialize(double_pendulum.points, double_pendulum.lines)
   d.draw(k, w)
   print(k)
   print(w)
