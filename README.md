@@ -13,3 +13,7 @@ This project is written in Python and uses [Poetry](https://python-poetry.org/) 
   2. Clone this project
   3. Install dependencies `poetry install`
   4. Run the application `poetry run python app/main.py`
+
+## Demo
+
+![Demo GIF](./repo-assets/output.gif)
